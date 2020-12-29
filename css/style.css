@@ -1,0 +1,78 @@
+/* remove browser's stylings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      background-image: linear-gradient(120deg, #f5dce0, #df7199);
+      font-family: sans-serif;
+      color: white;
+      min-height: 100vh;
+  }
+  header, form {
+      min-height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  form input, form button {
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      border: none;
+      background: white;
+  }
+  form button {
+      cursor: pointer;
+      color: #df7199;
+      background: white;
+      transition:all 0.3s ease-in-out;
+  }
+  form button:hover {
+      background: #df7199;
+      color: white;
+  }
+  .todo-container {
+      display: flex;
+      justify-content: center;
+  }
+  .todo-list {
+      list-style: none;
+      min-width: 30%;
+  }
+  .todo {
+      margin: 0.5rem;
+      font-size: 1.5rem;
+      background: white;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.5s ease;
+  }
+  .todo li {
+      flex: 1;
+  }
+  .done-btn, .delete-btn {
+      background: #df7199;
+      color: white;
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 1rem;
+  }
+  .delete-btn {
+      background: #dd417a;
+  }
+
+  .single-todo {
+      padding: 0 0.5rem;
+  }
+
+  .fa-check, .fa-window-close {
+      pointer-events: none;
+  }
+  .completed {
+      text-decoration: line-through;
+      opacity: 0.5;
+  }
